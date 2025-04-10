@@ -40,10 +40,13 @@ const Home = () => {
           <ProviderCarousel />
         </div>
       </section>
-      <section>
+      <section className="bg-white mt-2  rounded-md  flex justify-center items-center p-6">
         <div>
-          <h2>We provide the following services too...</h2>
+          <h2 className="text-3xl  font-semibold font-mono capitalize">
+            What you can do on medtrix
+          </h2>
         </div>
+        <div></div>
       </section>
     </main>
   );
