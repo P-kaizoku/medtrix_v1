@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="h-auto min-h-screen w-screen bg-neutral-200 py-4">
+        <div className="h-auto min-h-screen  bg-neutral-200 py-4">
           <div className="max-w-[1100px] mx-auto">
             <Navbar />
             {children}

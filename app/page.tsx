@@ -4,10 +4,11 @@ import Hero from "../public/Hero.png";
 import DecodeText from "./components/DecodeText";
 import { BsArrowRight } from "react-icons/bs";
 import ProviderCarousel from "./components/ProviderCarousel";
+import MedrixServices from "./components/MedrixServices";
 
 const Home = () => {
   return (
-    <main>
+    <main className="w-full">
       <section className="text-white py-8 grid grid-cols-2 bg-gradient-to-br from-indigo-500 to-blue-500 mt-2 rounded-md">
         <div className="w-5/6  mx-auto ">
           <h1 className="text-7xl font-bold mt-6 mb-6 text-wrap">
@@ -40,13 +41,8 @@ const Home = () => {
           <ProviderCarousel />
         </div>
       </section>
-      <section className="bg-white mt-2  rounded-md  flex justify-center items-center p-6">
-        <div>
-          <h2 className="text-3xl  font-semibold font-mono capitalize">
-            What you can do on medtrix
-          </h2>
-        </div>
-        <div></div>
+      <section className="bg-white mt-2 rounded-md overflow-hidden">
+        <MedrixServices />
       </section>
     </main>
   );
