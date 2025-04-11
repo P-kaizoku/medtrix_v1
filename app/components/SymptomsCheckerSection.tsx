@@ -1,4 +1,5 @@
 "use client";
+import { generateMedicalDiagnosis } from "@/lib/actions/general.actions";
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
@@ -7,9 +8,16 @@ const SymptomsCheckerSection: React.FC = () => {
   const [age, setAge] = useState("");
   const [gender, setGender] = useState("");
 
-  const handleCheckSymptoms = () => {
+  const handleCheckSymptoms = async () => {
     console.log("Checking symptoms:", { symptoms, age, gender });
-    // Implement your symptom checker logic here
+    // Implement your symptom checker logic
+    const response = await generateMedicalDiagnosis(
+      symptoms,
+      parseInt(age),
+      gender
+    );
+    //TODO: Create a new component to display the response for the AI
+    console.log("Response from AI:", response);
   };
 
   return (
