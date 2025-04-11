@@ -8,11 +8,12 @@ const Navbar = () => {
       </span>
       <ul className="flex items-center gap-4 text-lg  font-medium">
         <li>
-          <a href="#provider">Providers</a>
-        </li>
-        <li>
           <a href="#services">Services</a>
         </li>
+        <li>
+          <a href="#provider">Providers</a>
+        </li>
+
         <li>
           <a href="#suppliers">Suppliers</a>
         </li>

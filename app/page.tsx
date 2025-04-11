@@ -8,6 +8,7 @@ import MedrixServices from "./components/MedrixServices";
 import WholesaleSection from "./components/WholesaleSection";
 import AboutSection from "./components/AboutSection";
 import ContactUsSection from "./components/ContactUsSection";
+import SymptomsCheckerSection from "./components/SymptomsCheckerSection";
 
 const Home = () => {
   return (
@@ -35,6 +36,12 @@ const Home = () => {
         </div>
       </section>
       <section
+        id="services"
+        className=" mt-2 rounded-md overflow-hidden shadow-md"
+      >
+        <MedrixServices />
+      </section>
+      <section
         id="provider"
         className="bg-white grid-cols-2 grid py-8 mt-2 rounded-md"
       >
@@ -47,14 +54,12 @@ const Home = () => {
           <ProviderCarousel />
         </div>
       </section>
-      <section
-        id="services"
-        className=" mt-2 rounded-md overflow-hidden shadow-md"
-      >
-        <MedrixServices />
-      </section>
+
       <section id="suppliers" className="default-section p-24">
         <WholesaleSection />
+      </section>
+      <section>
+        <SymptomsCheckerSection />
       </section>
       <section id="about" className="default-section">
         <AboutSection />
