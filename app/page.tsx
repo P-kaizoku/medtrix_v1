@@ -7,6 +7,7 @@ import ProviderCarousel from "./components/ProviderCarousel";
 import MedrixServices from "./components/MedrixServices";
 import WholesaleSection from "./components/WholesaleSection";
 import AboutSection from "./components/AboutSection";
+import ContactUsSection from "./components/ContactUsSection";
 
 const Home = () => {
   return (
@@ -46,11 +47,14 @@ const Home = () => {
       <section className=" mt-2 rounded-md overflow-hidden shadow-md">
         <MedrixServices />
       </section>
-      <section className="bg-white mt-2 rounded-md shadow-md overflow-hidden p-24">
+      <section className="default-section p-24">
         <WholesaleSection />
       </section>
-      <section className="bg-white mt-2 rounded-md shadow-md overflow-hidden ">
+      <section className="default-section">
         <AboutSection />
+      </section>
+      <section className="default-section">
+        <ContactUsSection />
       </section>
     </main>
   );
