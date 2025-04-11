@@ -5,6 +5,8 @@ import DecodeText from "./components/DecodeText";
 import { BsArrowRight } from "react-icons/bs";
 import ProviderCarousel from "./components/ProviderCarousel";
 import MedrixServices from "./components/MedrixServices";
+import WholesaleSection from "./components/WholesaleSection";
+import AboutSection from "./components/AboutSection";
 
 const Home = () => {
   return (
@@ -41,8 +43,14 @@ const Home = () => {
           <ProviderCarousel />
         </div>
       </section>
-      <section className="bg-white mt-2 rounded-md overflow-hidden">
+      <section className=" mt-2 rounded-md overflow-hidden shadow-md">
         <MedrixServices />
+      </section>
+      <section className="bg-white mt-2 rounded-md shadow-md overflow-hidden p-24">
+        <WholesaleSection />
+      </section>
+      <section className="bg-white mt-2 rounded-md shadow-md overflow-hidden ">
+        <AboutSection />
       </section>
     </main>
   );
