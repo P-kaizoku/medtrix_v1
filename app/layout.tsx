@@ -25,12 +25,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth scroll-pt-15">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="h-auto min-h-screen  bg-neutral-200 py-4">
-          <div className="max-w-[1100px] mx-auto">
+        <div className="h-auto min-h-screen  bg-neutral-200  ">
+          <div className="max-w-[1100px] mx-auto ">
             <Navbar />
             {children}
           </div>

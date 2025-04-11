@@ -11,7 +11,7 @@ import ContactUsSection from "./components/ContactUsSection";
 
 const Home = () => {
   return (
-    <main className="w-full">
+    <main className="w-full ">
       <section className="text-white py-8 grid grid-cols-2 bg-gradient-to-br from-indigo-500 to-blue-500 mt-2 rounded-md">
         <div className="w-5/6  mx-auto ">
           <h1 className="text-7xl font-bold mt-6 mb-6 text-wrap">
@@ -23,7 +23,7 @@ const Home = () => {
             healthcare delivery.
           </p>
           <div className="w-full mt-8">
-            <button className="px-4 py-2 bg-blue-700 text-white rounded-xl text-xl font-medium ">
+            <button className="px-4 py-2 bg-blue-700 text-white rounded-xl text-xl font-medium cursor-pointer">
               Get Started <BsArrowRight className="inline" />
             </button>
           </div>
@@ -34,7 +34,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-white grid-cols-2 grid py-8 mt-2 rounded-md">
+      <section
+        id="provider"
+        className="bg-white grid-cols-2 grid py-8 mt-2 rounded-md"
+      >
         <div className="w-4/6 mx-auto my-20 ">
           <h2 className="text-6xl  text-center font-mono capitalize">
             You can join us as a <DecodeText text="Provider" speed={50} />
@@ -44,16 +47,19 @@ const Home = () => {
           <ProviderCarousel />
         </div>
       </section>
-      <section className=" mt-2 rounded-md overflow-hidden shadow-md">
+      <section
+        id="services"
+        className=" mt-2 rounded-md overflow-hidden shadow-md"
+      >
         <MedrixServices />
       </section>
-      <section className="default-section p-24">
+      <section id="suppliers" className="default-section p-24">
         <WholesaleSection />
       </section>
-      <section className="default-section">
+      <section id="about" className="default-section">
         <AboutSection />
       </section>
-      <section className="default-section">
+      <section id="contact" className="default-section">
         <ContactUsSection />
       </section>
     </main>
